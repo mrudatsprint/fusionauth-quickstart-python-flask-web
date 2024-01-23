@@ -175,7 +175,6 @@ def profile():
       if client_response.was_successful():
           registration_data = client_response.success_response['registration'].get('data')
           profile['registration_data'] = registration_data
-          print(registration_data)
 
           if request.method == 'POST':
             try:
